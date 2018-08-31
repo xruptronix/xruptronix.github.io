@@ -1,3 +1,5 @@
+importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-app.js');
+importScripts('https://www.gstatic.com/firebasejs/4.8.1/firebase-messaging.js');
 var config = {
     apiKey: "AIzaSyBALhU8Y1tGlNT5YS8mZjJebxf0Kv5JHYI",
     authDomain: "message-e2ad2.firebaseapp.com",

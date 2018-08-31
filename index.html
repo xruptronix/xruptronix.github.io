@@ -27,7 +27,7 @@
     const messaging = firebase.messaging();
     
     // Add the public key generated from the console here.
-    messaging.usePublicVapidKey("BFT3slMCnR1B3YRh5JdLCe_39zewiQ4v7Z59fTjkmxBUBz6WNG6L2IDEo59YyCuNCIfT0wb5FO8Pac8gDcwJXT8");
+    // messaging.usePublicVapidKey("BFT3slMCnR1B3YRh5JdLCe_39zewiQ4v7Z59fTjkmxBUBz6WNG6L2IDEo59YyCuNCIfT0wb5FO8Pac8gDcwJXT8");
 
     messaging.requestPermission().then(function() {
         console.log('Notification permission granted.');

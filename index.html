@@ -59,9 +59,18 @@
         console.log('Unable to get permission to notify.', err);
     });
 
-    messaging.onMessage(function(payload) {
-        console.log('Message received. ', payload);
-    // ...
+    // messaging.onMessage(function(payload) {
+    //     console.log('Message received. ', payload);
+    // // ...
+    // });
+    messaging.setBackgroundMessageHandler(function(payload) {
+        console.log('[firebase-messaging-sw.js] Received background message ', payload);
+        const notificationTitle = 'Background Message from html';
+        const notificationOptions = {
+            body: 'This is custom notification'
+        };
+
+        return self.registration.showNotification(notificationTitle,notificationOptions);
     });
     </script>
 </body>

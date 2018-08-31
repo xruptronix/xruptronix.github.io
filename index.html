@@ -22,6 +22,8 @@
     };
     firebase.initializeApp(config);
 
+    const messaging = firebase.messaging();
+
     messaging.getToken().then(function(currentToken) {
 
         if (currentToken) {
@@ -41,9 +43,9 @@
     // setTokenSentToServer(false);
     });
 
-    const messaging = firebase.messaging();
+    
 
-    console.log(messaging);
+    // console.log(messaging);
 
     
     </script>
